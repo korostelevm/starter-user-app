@@ -87,6 +87,7 @@ app.post('/login', async (req, res) => {
     req.session.user = user
 
     req.session.save(function (err) {
+      console.log('redirecting')
       // session saved before callback invoked
       res.redirect('/')
     })
