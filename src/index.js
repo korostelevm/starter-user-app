@@ -34,7 +34,8 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: 'auto', // (process.env.NODE_ENV != 'development'),
+//     secure: 'auto', // (process.env.NODE_ENV != 'development'),
+    secure: true,
     maxAge: oneDayMs
   }
   // unset: "destroy"
